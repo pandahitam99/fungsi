@@ -20,6 +20,7 @@ linear <- function(x){
   return(fx)
 }
 input <- 1:4
+plot(input, sapply(input, linear), type = "l", xlab = "x", ylab = "f(x)")
 linear(input)
 
 #Quadratic Function
@@ -29,6 +30,7 @@ quadratic <- function(x){
 }
 
 input <- 1:3
+plot(input, sapply(input, quadratic), type = "l", xlab = "x", ylab = "f(x)")
 quadratic(input)
 
 #Polynomial function
@@ -38,6 +40,7 @@ polynormial <- function(x){
 }
 
 input <- 1:3
+plot(input, sapply(input, polynormial), type = "l", xlab = "x", ylab = "f(x)")
 polynormial(input)
 
 #Rational function
@@ -47,5 +50,6 @@ rational <- function(x){
 }
 
 input <- -1 : 3
+plot(input, sapply(input, rational), type = "l", xlab = "x", ylab = "f(x)")
 rational(input)
 
